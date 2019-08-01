@@ -24,7 +24,7 @@ export class EditComponent implements OnInit {
   ngOnInit() {
     console.log(this.activatedRoute.snapshot.paramMap.get('id'));
 
-    this.http.get(`http://5d204f693036a60014d68b2c.mockapi.io/bookLib/${this.activatedRoute.snapshot.paramMap.get('id')}`)
+    this.http.get(`https://5d204f693036a60014d68b2c.mockapi.io/bookLib/${this.activatedRoute.snapshot.paramMap.get('id')}`)
       .toPromise()
       .then((response: any) => {
         this.bookForm.setValue({
@@ -47,7 +47,7 @@ export class EditComponent implements OnInit {
   postBook() {
 
 // tslint:disable-next-line: max-line-length
-    this.http.put(`http://5d204f693036a60014d68b2c.mockapi.io/bookLib/${this.activatedRoute.snapshot.paramMap.get('id')}`, this.bookForm.value)
+    this.http.put(`https://5d204f693036a60014d68b2c.mockapi.io/bookLib/${this.activatedRoute.snapshot.paramMap.get('id')}`, this.bookForm.value)
       .toPromise()
       .then((response) => {
         console.log(response);

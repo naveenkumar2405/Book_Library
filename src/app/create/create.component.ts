@@ -24,7 +24,7 @@ export class CreateComponent implements OnInit {
 
   postBook() {
     console.log(this.bookForm.value);
-    this.http.post('http://5d204f693036a60014d68b2c.mockapi.io/bookLib', this.bookForm.value)
+    this.http.post('https://5d204f693036a60014d68b2c.mockapi.io/bookLib', this.bookForm.value)
       .toPromise()
       .then((response) => {
         this.router.navigate(['dashboard/listbook']);

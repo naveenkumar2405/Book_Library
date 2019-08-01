@@ -15,7 +15,7 @@ export class ListbookComponent implements OnInit {
   }
 
   loadData() {
-    this.http.get('http://5d204f693036a60014d68b2c.mockapi.io/bookLib')
+    this.http.get('https://5d204f693036a60014d68b2c.mockapi.io/bookLib')
       .toPromise()
       .then((response) => {
         this.bookForm = response;
@@ -29,7 +29,7 @@ export class ListbookComponent implements OnInit {
     let result = confirm('Are you sure do you want to delete?');
     if (result == true) {
       console.log(id);
-      this.http.delete(`http://5d204f693036a60014d68b2c.mockapi.io/bookLib/${id}`)
+      this.http.delete(`https://5d204f693036a60014d68b2c.mockapi.io/bookLib/${id}`)
         .toPromise()
         .then((response) => {
           console.log(response);
