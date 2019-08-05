@@ -112,6 +112,7 @@ ol,
 ul,
 dl {
   margin-top: 0;
+  margin-left: -25px;
   margin-bottom: 1rem;
 }
 
@@ -6985,7 +6986,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #5a5c69 !important;
+  background-image: linear-gradient(to right top, #051937, #052e60, #05438c, #075aba, #1272eb) !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -10685,9 +10686,9 @@ a:focus {
 }
 
 .bg-gradient-primary {
-  background-color: #4e73df;
+  background-color: #09206e;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #4e73df), to(#224abe));
-  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+  background-image: linear-gradient(to right top, #051937, #122a4f, #1f3b68, #2c4e82, #38629d);
   background-size: cover;
 }
 
@@ -11164,7 +11165,7 @@ a:focus {
 .sidebar .nav-item .collapsing .collapse-inner {
   padding: .5rem 0;
   min-width: 10rem;
-  font-size: 0.85rem;
+  font-size: 15px;
   margin: 0 0 1rem 0;
 }
 
@@ -11184,7 +11185,7 @@ a:focus {
   padding: 0.5rem 1rem;
   margin: 0 0.5rem;
   display: block;
-  color: #3a3b45;
+  color: #05026c;
   text-decoration: none;
   border-radius: 0.35rem;
   white-space: nowrap;
@@ -11309,7 +11310,7 @@ a:focus {
     margin-right: 0.25rem;
   }
   .sidebar .nav-item .nav-link span {
-    font-size: 0.85rem;
+    font-size: 18px;
     display: inline;
   }
   .sidebar .nav-item .nav-link[data-toggle="collapse"]::after {

@@ -1,0 +1,9 @@
+.head{
+  background: -webkit-linear-gradient(rgb(7, 13, 25), rgb(4, 53, 138));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#bg{
+  background-image: linear-gradient(to right top, #f3f5f8, #858687, #989ca298, #e9ecf0, #274165);
+}
